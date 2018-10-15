@@ -149,7 +149,7 @@ console.log("proxyTest.foo", proxyTest.foo)
 
 // proxy apply
 var twice = {
-        // target = 目标对象  ctx = 目标对象的上下文对象 args = 目标对象数组
+    // target = 目标对象  ctx = 目标对象的上下文对象 args = 目标对象数组
     apply(target, ctx, args) {
         console.log("apply", arguments)
         return Reflect.apply(...arguments) * 2;
@@ -157,14 +157,15 @@ var twice = {
 };
 
 let sum = (...data) => {
-    console.log("sum", data)
+    console.log("sum", data instanceof Array)
     let res = 0;
-    for (let item of data) {
-        if (!item) {
-            item = 0;
-        }
-        res += item;
-    }
+    // for (let item of data) {
+    //     if (!item) {
+    //         item = 0;
+    //     }
+    //     res += item;
+    // }
+    res = data.reduce((x, y) => x + y)
     return res;
 };
 var twiceproxy = new Proxy(sum, twice);
