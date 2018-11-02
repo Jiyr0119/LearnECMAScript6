@@ -1,12 +1,21 @@
 // reflect get
-import { firstName, lastName, year } from './Module.js';
+console.log('lalala')
+
+import {
+    firstName,
+    lastName,
+    year
+} from './Module.js';
+// console.log(firstName)
+
+// const util = require('/Module.js');
 
 var myObject = {
     foo: 1,
     bar: 2,
     get baz() {
         return this.foo + this.bar;
-    },
+    }
 };
 
 var myReceiverObject = {
@@ -25,4 +34,4 @@ console.log("Reflect.set", Reflect.set(myReceiverObject, 'baz', 10)) // 3
 
 // let ModuleTest = multiply(11, 5);
 console.log(firstName)
-// console.log('Module.js', ModuleTest)
+    // console.log('Module.js', ModuleTest)
