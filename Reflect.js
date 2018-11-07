@@ -1,6 +1,4 @@
 // reflect get
-console.log('lalala')
-
 import {
     firstName,
     lastName,
