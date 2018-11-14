@@ -24,7 +24,15 @@
     <div class="bg">
         微信小程序自定义导航栏实现。isMe
     </div>
+    <div class="data-show-box" id="dateShow1">
+        <span class="d-box"><span class="date-tiem-span d">00</span>天</span>
+        <span class="h-box"><span class="date-tiem-span h">00</span>时</span>
+        <span class="m-box"><span class="date-tiem-span m">00</span>分</span>
+        <span class="s-box"><span class="date-s-span s">00</span>秒</span>
+    </div>
 </body>
+<script src="jquery.min.js" type="text/javascript"></script>
+<script src="count.js"></script>
 <script type="text/javascript">
     let test = (...data) => {
         // console.log(data instanceof Array)
@@ -60,11 +68,16 @@
     // }
     // console.log('校验时间', checkTime(2))
     // console.log('校验时间', 00 > 0)
+    addTimer('dateShow1', '1541494619', 1, '', function(res) {
+        if (res.time == 5) {}
+    }, function(res) {
+        console.log(res, 'end1')
+    })
 </script>
 <!-- <script src="Proxy.js"></script>
 <script src="Array.js"></script> -->
 <!-- <script src="Reflect.js" type="module" async></script> -->
-<script src="Promise.js"></script>
-
+<!-- <script src="Promise.js"></script> -->
+<script src="Class.js"></script>
 
 </html>
