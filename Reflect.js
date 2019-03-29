@@ -32,4 +32,4 @@ console.log("Reflect.set", Reflect.set(myReceiverObject, 'baz', 10)) // 3
 
 // let ModuleTest = multiply(11, 5);
 console.log(firstName)
-    // console.log('Module.js', ModuleTest)
+// console.log('Module.js', ModuleTest)
