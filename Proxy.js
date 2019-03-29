@@ -94,7 +94,9 @@ const dom = new Proxy({}, {
 
 const el = dom.div({},
     'Hello, my name is ',
-    dom.a({ href: '//example.com' }, 'Jonathan'),
+    dom.a({
+        href: '//example.com'
+    }, 'Jonathan'),
     '. I like:',
     dom.ul({},
         dom.li({}, 'The web'),

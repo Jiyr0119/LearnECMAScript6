@@ -1,4 +1,3 @@
-/* eslint-disable */
 class Point {
     constructor(x, y) {
         this.x = x;
@@ -21,7 +20,7 @@ p1.__proto__.printName = function() {
 // console.log(p1.printName())
 
 let p3 = new Point(3, 9)
-    // console.log(p3.printName())
+// console.log(p3.printName())
 
 class ColorPoint extends Point {
     constructor(x, y, color) {
