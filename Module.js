@@ -7,4 +7,8 @@ var year = 1958;
 // 	lastName,
 // 	year
 // }
-export { firstName, lastName, year };
+export {
+    firstName,
+    lastName,
+    year
+};
